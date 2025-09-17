@@ -364,3 +364,47 @@ body {
   margin: 0 auto 8px;         /* center it */
 }
 
+/* --- Fix home page centering --- */
+.home-page {
+  max-width: 700px;          /* keeps the column narrow & truly centered */
+  margin: 0 auto;
+}
+
+.intro,
+.profiling-questions,
+.outro {
+  margin-left: auto;         /* center these sections */
+  margin-right: auto;
+}
+
+.profiling-questions {       /* set a readable width for the form block */
+  width: 500px;
+}
+
+.text-area {
+  width: 100%;               /* inputs fill that 500px block */
+}
+
+/* --- Fix results checkbox alignment --- */
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: fit-content;        /* shrink to its contents */
+  margin: 25px auto 0;       /* center the group inside .final */
+  text-align: left;          /* keep labels left-aligned within the centered group */
+}
+
+.checkbox label {
+  display: flex;             /* tidy input + label alignment */
+  align-items: center;
+  gap: 8px;
+}
+
+/* Optional: keep the “Thanks” text centered but not pushing layout */
+.more p {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+

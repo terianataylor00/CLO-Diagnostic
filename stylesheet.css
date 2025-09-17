@@ -92,6 +92,15 @@ body {
   text-align: center;
 }
 
+.home-page h2,
+.about-company {
+  display: block;     
+  width: 100%;
+  text-align: center;  
+  margin: 40px auto 0;   
+}
+
+
 .profiling-questions{
   justify-self: center;
   font-size: 12px;

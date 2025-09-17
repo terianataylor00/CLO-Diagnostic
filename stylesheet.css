@@ -85,15 +85,9 @@ body {
   margin-top:20px;
 }
 
-.about-company{
-  color:#105467;
-  display: flex;
-  justify-self: center;
-  text-align: center;
-}
-
 .home-page h2,
 .about-company {
+  color:#105467;
   display: block;     
   width: 100%;
   text-align: center;  

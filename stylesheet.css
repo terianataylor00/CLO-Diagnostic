@@ -89,6 +89,7 @@ body {
   color:#105467;
   display: flex;
   justify-self: center;
+  text-align: center;
 }
 
 .profiling-questions{

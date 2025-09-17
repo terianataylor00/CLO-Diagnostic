@@ -87,6 +87,8 @@ body {
 
 .about-company{
   color:#105467;
+  display: flex;
+  justify-self: center;
 }
 
 .profiling-questions{

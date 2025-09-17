@@ -313,3 +313,54 @@ a{
   background-color: #e3e3e3;
 }
 
+/* --- Universal hardening & page centering --- */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;                 /* you already reset with *, but keep it explicit */
+  display: flex;             /* center the page wrapper */
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 40px 20px;        /* comfy gutters */
+}
+
+.base {
+  width: 100%;
+  max-width: 900px;          /* consistent page width like results */
+  margin: 0 auto;            /* classic centering fallback */
+}
+
+/* --- Fix the o/x/c question pages --- */
+.questions {
+  /* was: width: max-content; justify-self: center; */
+  width: 100%;
+  max-width: 700px;          /* matches your .qa-box target width */
+  margin: 0 auto;            /* center the questions stack */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;       /* buttons fill width nicely */
+}
+
+.qa-box {
+  /* was: width: 700px; */
+  width: 100%;
+  max-width: 700px;           /* responsive on small screens */
+  margin: 0 auto 20px;        /* center each card */
+  border: none;
+  box-shadow: 2px 2px 2px gray;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #10546721;
+  font-size: 17px;
+}
+
+/* Directions text was pushing layout with huge side padding percentages */
+.directions {
+  text-align: center;
+  padding: 24px 16px;         /* simpler */
+  max-width: 70ch;            /* readable line length */
+  margin: 0 auto 8px;         /* center it */
+}
+

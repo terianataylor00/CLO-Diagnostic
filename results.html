@@ -4,25 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
   <div class="base">
 
     <div class="final">
 
-      <div class="thanks">
+      <div class="thanks" #first-thanks>
         <p>Thank you for taking part in the CLO diagnostic. We hope you found the questions interesting and you can find your automated CLO Diagnostic Data Report here. The report is free of charge and we hope you find it useful.</p>
       </div>
 
+      <br class="r-space">
+      
+
       <div class="more">
         <p>If you would like more, please tick where appropriate below &#38 one of the team will get back to you soon:</p>
+      
+        <div class="checkbox">
+          <form action="">
+            <div class="checkbox-item tooltip">
+              <input type="checkbox" name="report" id="report">
+              <label for="report">CLO Diagnostic Management Report </label>
+              <br>
+              <!-- <span class="tooltip-text">
+                This takes your data report, provides additional management insights and presents it in a consultancy report that can be share internally.
+              </span> -->
+            </div>
+            
+            <div class="checkbox-item tooltip">
+              <input type="checkbox" name="toolbox" id="toolbox">
+              <label for="toolbox">CLO Management Toolbox </label>
+              <br>
+
+              <!-- <span class="tooltip-text">
+                This document is free for all CLO members and lists the infrastructure a single GC, national and global Legal Departments all need to have in place.
+              </span> -->
+              
+            </div>
+            
+            <div class="checkbox-item tooltip">
+              <input type="checkbox" name="diagnostic" id="diagnostic">
+              <label for="diagnostic">CLO Department Diagnostic</label>
+              <br>
+              <!-- <span class="tooltip-text">
+                This is a bespoke diagnostic for you that measures internal legal department perceptions of performance against external business unit feedback.  As a result it enables the CLO to prioritise resources and time and identify opportunities for improvement.
+
+              </span> -->
+            </div>
+            
+          <!--
+            
+          this takes your data report, provides additional management insights and presents it in a consultancy report that can be share internally.
+          this document is free for all CLO members and lists the infrastructure a single GC, national and global Legal Departments all need to have in place.
+          this is a bespoke diagnostic for you that measures internal legal department perceptions of performance against external business unit feedback.  As a result it enables the CLO to prioritise resources and time and identify opportunities for improvement.
+          
+          -->
+
+          </form>
+        </div>
+        
+
       </div>
 
-      <div>
+      <div class="thanks" id="final-thanks">
         <p>Thank you again for taking part and please feel free to share the diagnostic link to people you think would find it interesting.</p>
+        a
       </div>
 
+
+      <br>
+      <button class="done">DONE</button>
+      <br>
+      
     </div>
+    
     
   </div>
   

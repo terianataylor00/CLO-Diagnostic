@@ -1,17 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Attach a click handler to each selection button
-  document.querySelectorAll('.selection-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Read and normalize the group value
-      const group = (btn.getAttribute('data-group') || '').trim();
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".selection-btn");
 
-      // If no group, do nothing
-      if (!group) return;
+  buttons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault(); // prevent form submission
 
-      // Turn OFF all in the same group, then turn ON the clicked one
-      document.querySelectorAll(`.selection-btn[data-group="${group}"]`)
-        .forEach(b => b.classList.toggle('active', b === btn));
+      const group = button.dataset.group;
+
+      // Remove active from all buttons in the same group
+      buttons.forEach((btn) => {
+        if (btn.dataset.group === group) {
+          btn.classList.remove("active");
+        }
+      });
+
+      // Add active to the clicked button
+      button.classList.add("active");
     });
   });
 });
-

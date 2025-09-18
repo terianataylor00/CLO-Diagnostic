@@ -1,0 +1,347 @@
+:root {
+  --brand: #105467;
+  --brand-20: #10546721; 
+  --bg: #f5f5f5;
+  --text: #000;
+}
+
+* { 
+  margin: 0; 
+  font-family: "Roboto Condensed", 
+  sans-serif; 
+}
+html { 
+  box-sizing: border-box; 
+}
+*, *::before, *::after { 
+  box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--bg);
+  padding: 40px 20px;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+.base {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Page 1*/
+.title { 
+  display:flex; 
+  justify-content:center; 
+  margin-top: 20px; 
+  color: var(--brand); 
+}
+#welcome { 
+  padding-top: 20px; 
+  text-align: center; 
+}
+
+.home-page { 
+  max-width: 700px; 
+  margin: 0 auto; 
+}
+.intro, .profiling-questions, .outro { 
+  max-width: 560px; 
+  margin: 0 auto; 
+}
+
+.intro {
+  width: 700px;
+  margin-top: 2%;
+  display: flex; flex-direction: column;
+}
+.intro p { 
+  text-align: center; 
+}
+.intro ul { 
+  display: table; 
+  margin: 0 auto; 
+  font-weight: 100; 
+  font-size: 17px; 
+}
+
+/* List */
+.core-list{
+  border: 3px solid var(--brand);
+  margin-top: 30px;
+  padding:20px 5px;
+  border-radius: 5px;
+  background-color: #225a69;
+  color: #fff;
+}
+.core-area { 
+  margin-bottom: 10px; 
+  font-weight: 500; 
+  font-size: 20px; 
+}
+.core-list ul li::marker { 
+  font-size: 0.8em; 
+}
+
+.info { 
+  margin-top:20px; 
+  font-weight: lighter; 
+}
+.about-company { 
+  color: var(--brand); 
+  text-align: center; 
+}
+
+/* Profile Questions */
+.profiling-questions { 
+  font-size: 12px; 
+  width: 100%; 
+}
+.profiling-questions p { 
+  margin-bottom: 5px; 
+}
+
+.profiling-text { 
+  font-weight: 400; 
+  width: 400px; 
+  margin: 0 auto; 
+}
+.profiling-text label { 
+  margin-bottom: 15px; 
+}
+
+.text-area {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: thin solid var(--text);
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.outro {
+  display: flex; flex-direction: column;
+  text-align: center; font-size: 14px;
+  width: 500px; margin-bottom: 30px; font-weight: 100;
+}
+
+.submit-wrapper{
+  display: flex;
+  justify-content: center;
+  border: none;
+  
+}
+
+.start-btn {
+  background: var(--brand);
+  color:#fff;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px 10px 28px;
+  display:flex; 
+  justify-self: center;
+  margin: 10px auto;
+  align-content: center;
+  cursor: pointer;
+}
+
+.start-btn:hover{
+  background-color: #4c5e62;
+}
+
+/* Question Pages - C/X/O*/
+.questions {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: stretch;
+}
+
+.directions {
+  text-align: center;
+  max-width: 70ch;
+  margin: 0 auto 8px;
+  padding: 24px 16px;
+}
+
+.qa-box{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 20px;
+  border: none;
+  box-shadow: 2px 2px 2px gray;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--brand-20);
+  font-size: 17px;
+}
+
+.btn-base{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selection-btn{
+  padding: 10px;
+  border-radius: 12px;
+  border: thin solid #000;
+  align-items: stretch;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #000;
+  background: #fff;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 250;
+}
+.selection-btn:hover { 
+  background-color: rgba(239,237,237,0.588); 
+}
+.selection-btn.active { 
+  background-color: var(--brand); 
+  color: #fff; 
+}
+
+/* Nav Buttons */
+.bottom-nav { 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+}
+.back-btn, .next-btn {
+  border-radius: 18px; 
+  margin-top: 10px; 
+  padding: 3px;
+  height: 35px; 
+  width: 60px; 
+  cursor: pointer;
+  color: #fff; 
+  background: var(--brand); 
+  border: none;
+}
+.next-btn { 
+  margin-left: 5px; 
+}
+.back-btn:hover, .next-btn:hover { 
+  background-color: #d9d7d7; 
+  color: #000; 
+}
+
+/* Results */
+.final{
+  display: flex; 
+  flex-direction: column; 
+  gap:10px;
+  width: 80%; 
+  padding-top: 30px; 
+  text-align: center;
+  border: solid 1px black; 
+  border-radius: 10px; 
+  align-content: center;
+  padding-left: 10px; 
+  padding-right: 10px; 
+  margin: auto;
+  background-color: #fff;
+}
+#first-thanks p { 
+  margin-bottom: 30px; 
+
+}
+
+#first-thanks p{
+  width: 300px;
+}
+
+.more p{
+  font-weight: 900;
+  width: 500px; 
+  max-width: 70ch;
+  margin: 0 auto; 
+  padding-top: 20px;
+}
+
+.checkbox{
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px;
+  width: max-content; 
+  margin: 25px auto 0; 
+  text-align:left;
+}
+.checkbox label { display: flex; 
+  align-items: center; 
+  gap: 8px; 
+}
+
+#final-thanks { 
+  display: flex; 
+  margin-top: 30px; 
+}
+
+.diagnotic, .toolbox, .report { 
+  font-weight: 200; 
+  text-decoration: none; 
+}
+
+.done{
+  width: 70px;
+  height: 30px; 
+  margin: 0 auto; 
+  border-radius: 15px; 
+  cursor: pointer;
+  border-width: thin;
+  background-color: #105467;
+  border-style: none;
+  color: white;
+}
+.done:hover { background-color: #1e88a5; }
+
+/* Text-only tooltip for checkbox label text */
+.tt {
+  position: relative;
+  cursor: help;           
+  outline: none;
+}
+
+.tt::after {
+  content: attr(data-tt);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translateY(8px);
+  max-width: 32rem;        /* wraps long text */
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #fff;
+  background: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  opacity: 0;
+  pointer-events: none;    /* tooltip never steals clicks */
+  transition: opacity .15s ease, transform .15s ease;
+  z-index: 10;
+  white-space: normal;
+}
+
+.tt:hover::after,
+.tt:focus::after {
+  opacity: 1;
+  transform: translateY(4px);
+}
+
+.r-body{
+  background-color: #105467;
+}

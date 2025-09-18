@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheet.css?v=7">
+  <link rel="stylesheet" href="./stylesheet(2).css">
   <title>CLO Diagnostic</title>
 </head>
 <body>
@@ -12,7 +12,6 @@
 
       <h1 class="title" id="welcome">Welcome to the Chief Legal Officer Diagnostic</h1>
       <br>
-      
       <div class="intro">
     
         <p>This is a self-diagnostic that enables CLOs to assess 
@@ -20,7 +19,7 @@
           legal departments only and is not appropriate for law firms. 
         </p>
 
-        <br> </br>
+        <br>
 
         <div class="core-list">
 
@@ -44,9 +43,9 @@
           of your strength, weaknesses, opportunities, and threats.
         </p>
 
-        <br></br>
+        <br>
 
-        <p>The CLO Diagnostic is aliged to the &#39CLO Management Toolbox&#39 that looks at the Department
+        <p class="info">The CLO Diagnostic is aliged to the &#39CLO Management Toolbox&#39 that looks at the Department
         Maturity and the &#39CLO Department Diagnostic&#39 that utilizing internal business unit 
         feedback to get a business view point and indentify opportunities for improvement.
         </p>
@@ -60,40 +59,40 @@
 
       <div class="profiling-questions">
 
-        <form action="">
+        <form id="profile-form">
           <div class="profiling-text" id="name">
-            <p>Name</p>
-            <input type="text" id="name-input" class="text-area">
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input" class="text-area" name="name" required>
           </div>
 
           <div class="profiling-text" id="role">
-            <p>Role</p>
-            <input type="text" id="role-input" class="text-area">
+            <label for="role-input">Role</label>
+            <input type="text" id="role-input" class="text-area" name="role" required>
           </div>
 
           <div class="profiling-text" id="company">
-            <p>Company</p>
-            <input type="text" id="company-input" class="text-area">
+            <label for="company-input">Company</label>
+            <input type="text" id="company-input" class="text-area" name="company" required>
           </div>
 
           <div class="profiling-text" id="sector">
-            <p>Sector</p>
-            <input type="text" id="sector-input" class="text-area">
+            <label for="sector-input">Sector</label>
+            <input type="text" id="sector-input" class="text-area" name="sector" required>
           </div>
 
           <div class="profiling-text" id="size">
-            <p>Size of Function &#40People&#41</p>
-            <input type="text" id="size-input" class="text-area">
+            <label for="size-input">Size of Function &#40People&#41</label>
+            <input type="text" id="size-input" class="text-area" name="size" required>
           </div>
         
           <div class="profiling-text" id="cost">
-            <p>Cost of Function &#40&#163&#41</p>
-            <input type="text" id="cost-input" class="text-area">
+            <label for="cost">Cost of Function &#40&#163&#41</label>
+            <input type="text" id="cost-input" class="text-area" name="cost" required>
           </div>
 
           <div class="profiling-text" id="footprint">
-            <p>Geographic Footprint</p>
-            <input type="text" id="sector-input" class="text-area">
+            <label for="footprint-input">Geographic Footprint</label>
+            <input type="text" id="footprint-input" class="text-area" name="footprint" required>
           </div>
         </form>
 
@@ -107,12 +106,16 @@
       </div>
 
 
-
-      <a href="cQuestions.html" class="start-btn">Start Diagnostic</a>
+      <div class="submit-wrapper">
+        <button id="startBtn" class="start-btn" type="button">Start Diagnostic</button>
+      </div>
+      
       <br>
     </div>
 
   </div>
   
+<script src="./script.js"></script>
+
 </body>
 </html>
